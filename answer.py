@@ -29,7 +29,7 @@ def strings():
 
     # What is the length of stevens_7?
 
-    length = len(stevens)
+    length = len(stevens_7)
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
 
@@ -49,7 +49,7 @@ def list_1D():
     s = " hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
-    hoboken = s.rstrip()
+    hoboken = s.rstrip().lstrip()
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
@@ -67,7 +67,7 @@ def list_1D():
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l = l[3:11]
+    new_l = l[3:10]
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -83,7 +83,7 @@ def list_2D():
 
     # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column = A[2]
+    last_column = [A[i][2] for i in A]
 
     # Get the item at the last row and last column of A.
 
