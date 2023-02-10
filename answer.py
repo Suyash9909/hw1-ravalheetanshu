@@ -57,7 +57,7 @@ def list_1D():
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
-    hoboken_first_item = [hoboken_list[0]]
+    hoboken_first_item = hoboken_list[0]
 
     ####
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
